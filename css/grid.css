@@ -1,0 +1,288 @@
+.container-main {
+	display: grid;
+	grid-template: repeat(8, auto) / 1fr;
+	grid-template-areas: 
+						"slideshow"
+						"about_us"
+						"services"
+						"team"
+						"promo"
+						"catalogue"
+						"testimonials"
+						"footer";
+}
+/*--------------------------------------------=Header start--------------------------------------------*/
+.header .container {
+	display: grid;
+	grid-template: 100% / 2fr 8fr;
+	grid-template-areas: "logo navigation";
+}
+.header .container .logo {
+	grid-area: logo;
+}
+.header .container .navigation {
+	grid-area: navigation;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.mobile-menu {
+	display: grid;
+	grid-template: auto 6fr 1fr / 1fr 5fr;
+}
+.mobile-menu .menu-icon {
+	grid-row: 1;
+	grid-column: 2/3;
+	display: grid;
+}
+.mobile-menu .navigation {
+	grid-row: 2/-1;
+	grid-column: 2/3;
+	display: grid;
+	grid-template: repeat(6, auto) / 1fr 8fr;
+}
+.mobile-menu .navigation .links {
+	grid-row: 1;
+	grid-column: 2/-1;
+	display: grid;
+	grid-gap: 10px;
+}
+/*--------------------------------------------=Slideshow start--------------------------------------------*/
+.slideshow {
+	grid-area: slideshow;
+}
+/*--------------------------------------------=About Us start--------------------------------------------*/
+.about-us {
+	grid-area: about_us;
+}
+.about-us .container {
+	display: grid;
+	grid-template: 100% / 1fr 1fr;
+	grid-template-areas: "company_description specialisation";
+	grid-gap: 2rem;
+}
+.about-us .container .company-description {
+	grid-area: company_description;
+}
+.about-us .container .specialisation {
+	grid-area: specialisation;
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+}
+.about-us .container .specialisation .specialty {
+	align-self: center;
+}
+/*--------------------------------------------=Services start--------------------------------------------*/
+.services {
+	grid-area: services;
+}
+.services .container {
+	display: grid;
+	grid-template: auto auto / 1fr;
+	grid-template-areas:
+						"heading"
+						"all_services";
+	grid-gap: 4rem;
+}
+.services .container .heading {
+	grid-area: heading;
+}
+.services .container .all-services {
+	grid-area: all_services;
+	display: grid;
+	grid-template: 100% / repeat(4, 1fr);
+}
+/*--------------------------------------------=Team start--------------------------------------------*/
+.team {
+	grid-area: team;
+}
+.team .container {
+	display: grid;
+	grid-template: auto auto / 1fr;
+	grid-template-areas:
+						"heading"
+						"members";
+	grid-gap: 4rem;
+}
+.team .container .heading {
+	grid-area: heading;
+}
+.team .container .members {
+	grid-area: members;
+	display: grid;
+	grid-template: 100% / repeat(4, 1fr);
+}
+/*--------------------------------------------=Promo start--------------------------------------------*/
+.promo {
+	grid-area: promo;
+}
+/*--------------------------------------------=Catalogue start--------------------------------------------*/
+.catalogue {
+	grid-area: catalogue;
+}
+.catalogue .container {
+	display: grid;
+	grid-template: auto auto / 1fr;
+	grid-template-areas:
+						"heading"
+						"courses";
+	grid-gap: 4rem;
+}
+.catalogue .container .heading {
+	grid-area: heading;
+}
+.catalogue .container .courses {
+	grid-area: courses;
+	display: grid;
+	grid-template: 100% / repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+/*--------------------------------------------=Testimonials start--------------------------------------------*/
+.testimonials {
+	grid-area: testimonials;
+}
+.testimonials .container {
+	display: grid;
+	grid-template: auto auto / 1fr;
+	grid-template-areas:
+						"heading"
+						"all_testimonials";
+	grid-gap: 4rem;
+}
+.testimonials .container .heading {
+	grid-area: heading;
+}
+.testimonials .container .all-testimonials {
+	grid-area: all_testimonials;
+	display: grid;
+	grid-template: 100% / repeat(3, 1fr);
+	grid-gap: 2rem;
+}
+/*--------------------------------------------=Footer start--------------------------------------------*/
+.footer {
+	grid-area: footer;
+}
+.footer .container {
+	display: grid;
+	grid-template: auto auto / 1fr 1fr;
+	grid-template-areas:
+						"heading heading"
+						"contact_form contact_info";
+	grid-row-gap: 4rem;
+	grid-column-gap: 4rem;
+}
+.footer .container .heading {
+	grid-area: heading;
+}
+.footer .container .contact-form-container {
+	grid-area: contact_form;
+}
+.footer .container .contact-form-container .contact-form .field {
+	display: flex;
+	flex-direction: column;
+}
+.footer .container .contact-info-container {
+	grid-area: contact_info;
+}
+.footer .container .contact-info-container .contact-info {
+	display: grid;
+	grid-template: repeat(4, auto) / auto auto;
+	grid-template-areas:
+						"phone"
+						"email"
+						"social_media"
+						"maps";
+	grid-gap: 1rem;
+}
+.footer .container .contact-info-container .contact-info .phone {
+	grid-area: phone;
+	align-self: center;
+}
+.footer .container .contact-info-container .contact-info .email {
+	grid-area: email;
+	align-self: center;
+}
+.footer .container .contact-info-container .contact-info .social-media {
+	grid-area: social_media;
+	align-self: center;
+}
+.footer .container .contact-info-container .contact-info .maps {
+	grid-area: maps;
+}
+
+/*--------------------------------------------=screen width: <1024px--------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+	/*--------------------------------------------=About Us start--------------------------------------------*/
+	.about-us .container {
+		grid-template: auto auto / 1fr;
+		grid-template-areas:
+							"company_description"
+							"specialisation";
+		grid-gap: 3rem;
+	}
+	.about-us .container .specialisation {
+		grid-template: 100% / repeat(4, 25%);
+	}
+	/*--------------------------------------------=Services start--------------------------------------------*/
+	.services .container {
+		grid-row-gap: 2rem;
+	}
+	.services .container .all-services {
+		grid-row-gap: 1rem;
+	}
+	.services .container .all-services, .team .container .members, .catalogue .container .courses {
+		grid-template: repeat(4, auto) / 1fr;
+	}
+	/*--------------------------------------------=Team start--------------------------------------------*/
+	.team .container .members {
+		grid-row-gap: 4rem;
+	}
+	/*--------------------------------------------=Catalogue start--------------------------------------------*/
+	.catalogue .container .courses {
+		grid-row-gap: 4rem;
+	}
+	/*--------------------------------------------=Testimonial start--------------------------------------------*/
+	.testimonials .container .all-testimonials {
+		grid-template: repeat(3, auto) / 1fr;
+		grid-row-gap: 5rem;
+	}
+	/*--------------------------------------------=Footer start--------------------------------------------*/
+	.footer .container {
+		grid-template: repeat(3, auto) / 1fr;
+		grid-template-areas:
+							"heading"
+							"contact_form"
+							"contact_info";
+		grid-gap: 4rem;
+	}
+	.footer .container .contact-info-container .contact-info {
+		display: grid;
+		grid-template: repeat(4, auto) / 1fr;
+		grid-template-areas:
+							"phone"
+							"email"
+							"social_media"
+							"maps";
+		grid-gap: 1rem;
+	}
+}
+
+/*--------------------------------------------=screen width: <=480px--------------------------------------------*/
+@media only screen and (max-width: 480px) {
+	/*--------------------------------------------=About Us start--------------------------------------------*/
+	.about-us .container {
+		grid-row-gap: 4rem;
+	}
+	.about-us .container .specialisation {
+		grid-template: 106px 106px / repeat(2, 1fr);
+		grid-row-gap: 3rem;
+		grid-column-gap: 2rem;
+	}
+}
+
+/*--------------------------------------------=screen height: <=281px--------------------------------------------*/
+@media only screen and (max-height: 281px) {
+	.mobile-menu .navigation .links {
+		grid-gap: 7px;
+	}
+}

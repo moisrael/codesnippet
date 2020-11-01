@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!---------------------------=stylesheets--------------------------->
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!---------------------------=fav icon--------------------------->
+		<link rel="icon" type="image/png" href="../img/logo.png">
+	</head>
+	<body>
+		<div class="container-main">
+			<!---------------------------=Header start--------------------------->
+			<div class="header">
+				<div class="container">
+					<div class="logo">
+						<h1>Code Snippet</h1>
+					</div>
+					<nav class="navigation">
+						<a href="../index.html">HOME</a>
+						<span class="current-page">ABOUT US</span>
+						<a href="../index.html#services">SERVICES</a>
+						<a href="../index.html#team">OUR TEAM</a>
+						<a href="../index.html#catalogue">CATALOGUE</a>
+						<a href="../index.html#testimonials">TESTIMONIALS</a>
+						<a href="#contact">CONTACT</a>
+					</nav>
+					<div class="menu-icon-container">
+						<div class="menu-icon"><i class="fa fa-navicon"></i></div>
+					</div>
+				</div>
+			</div>
+			<!---------------------------=About Us start--------------------------->
+			<main class="about-us-section post-header">
+				<div class="container section-presets">
+					<div class="heading">
+						<h1>About Us</h1>
+					</div>
+					<div class="body">
+						<p>
+							We are a software startup in the first year of our operations. Our founders are entrepreneurs and Software Engineers with many years of experience in Information and Communication Technology. We are out to offer quality software solutions and training in many technologies and software stacks. We also offer intensive courses in web, mobile and native application development. Our courses are rich in format for both online and in-person immersion. We give our Students challenging projects to get them started in the real world of software development.
+						</p>
+						<p>
+							We are a software startup in the first year of our operations. Our founders are entrepreneurs and software engineers with many years of experience in Information and Communication Technology. We are out to offer quality software solutions and training is many technologies and software stacks. What are the benefits? It's cost effective and saves time: Our programming courses are one of the lowest charged if you are learning from home. This will further remove the travel costs and do away with printed materials. You will be saving money and learning. Learning 24/7, anywhere: Many face to face courses only operate within normal office hours. By allowing students to complete the course when and where they like you can make sure disruptions to your busy working schedule are minimised. This also means that our students will be happier because they don't need to travel to our training centres in Aauja. Most of our courses have an average learning time, courses allow learners to print out certificates of proof. It's Onsite Also: If you don't feels comfortable learning online. Code Snippet allows to learn along others and tackle the ptojects in groups, with immersive and intensive mentoring,we guild you to ensure a thorough understanding throughout each module.
+						</p>
+					</div>
+				</div>
+			</main>
+			<!---------------------------=Footer start--------------------------->
+			<footer class="footer"  id="contact">
+				<div class="container">
+					<div class="heading">
+						<h1>Welcome to Code Snippet</h1>
+						<p>Get in touch with us to sign up using the form below</p>
+					</div>
+					<div class="contact-form-container">
+						<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="contact_form" class="contact-form">
+							<div class="name field">
+								<label for="" class="name-label">Your Name</label>
+								<input class="name-field" type="text" name="name" placeholder="Your Name" autocomplete="off">
+								<div class="error name-error"></div>
+							</div>
+							<div class="date field">
+								<label for="" class="date-label">Today's Date</label>
+								<input class="date-field" type="text" name="date" readonly>
+							</div>
+							<div class="phone field">
+								<label for="" class="phone-label">Your Phone Number</label>
+								<input class="phone-field" type="tel" name="phone" placeholder="Your Phone Number" autocomplete="off">
+								<div class="error phone-error"></div>
+							</div>
+							<div class="email field">
+								<label for="" class="email-label">Your E-Mail Address</label>
+								<input class="email-field" type="email" name="email" placeholder="Your E-Mail Address" autocomplete="off">
+								<div class="error email-error"></div>
+							</div>
+							<div class="message field">
+								<label for="" class="message-label">Leave Us A Message</label>
+								<textarea class="message-field" name="message" placeholder="Leave Us A Message"></textarea>
+								<div class="error message-error"></div>
+							</div>
+							<div class="sign-up-button-container"><button class="sign-up-button enabled" name="send_message">Get In Touch</button></div>
+						</form>
+						<script src="../js/form.js"></script>
+					</div>
+					<div class="contact-info-container">
+						<div class="contact-info">
+							<div class="phone">
+								<i class="fa fa-phone icon"></i>
+								<a href="tel:+2347060962656" class="phone-1">+234<span class="underscore">_</span>706<span class="underscore">_</span>096<span class="underscore">_</span>2656</a>
+								<a href="tel:+436767212185" class="phone-2">+43<span class="underscore">_</span>676<span class="underscore">_</span>721<span class="underscore">_</span>2185</a>
+							</div>
+							<div class="email"><i class="fa fa-envelope icon"></i><a href="mailto:info@codedsnippet.online" class="email-1">info@codedsnippet.online</a></div>
+							<div class="social-media">
+								<a href="http://www.twitter.com"><i class="fa fa-twitter twitter"></i></a>
+								<a href="http://www.facebook.com"><i class="fa fa-facebook facebook"></i></a>
+								<a href="http://www.instagram.com"><i class="fa fa-instagram instagram"></i></a>
+								<a href="http://www.whatsapp.com"><i class="fa fa-whatsapp whatsapp"></i></a>
+							</div>
+							<div class="maps">
+								<div class="map-1">
+									<p class="address"><span class="location">Abuja Office</span> <br>Novare Central (Shoprite) Wuse Zone 5, Abuja.</p>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.994487391727!2d7.455907314786897!3d9.064265593496398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b158b813451%3A0x37ff276359a96026!2sNovare%20Central%20Park%20Shopping%20Mall!5e0!3m2!1sen!2sng!4v1603672670931!5m2!1sen!2sng" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
+								</div>
+								<div class="map-2">
+									<p class="address"><span class="location">Vienna Office</span> <br>Franz-Asenbauergasse 12-16/5/6, 1230 Vienna.</p>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10647.235252498189!2d16.272159!3d48.152491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da630eb6b4b2b%3A0x5f725dfe1dfd6582!2sFranz-Asenbauer-Gasse%2012-16%2C%201230%20Wien%2C%20Austria!5e0!3m2!1sen!2sng!4v1603672834805!5m2!1sen!2sng" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="socket">
+					<div class="copyright">
+						<p>Copyright &copy <span id="year"></span> All Rights Reserved <span class="code-snippet">CODE SNIPPET</span></p>
+						<script>
+							var year = new Date();
+							document.getElementById("year").innerHTML = year.getFullYear();
+						</script>
+					</div>
+				</div>
+			</footer>
+			<!---------------------------=Mobile Menu start--------------------------->
+			<div class="mobile-menu">
+				<div class="menu-icon"><i class="fa fa-remove"></i></div>
+				<div class="navigation">
+					<nav class="links">
+						<a href="../index.html">HOME</a>
+						<span class="current-page-alt">ABOUT US</span>
+						<a href="../index.html#services">SERVICES</a>
+						<a href="../index.html#team">OUR TEAM</a>
+						<a href="../index.html#catalogue">CATALOGUE</a>
+						<a href="../index.html#testimonials">TESTIMONIALS</a>
+						<a href="#contact">CONTACT</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/slider.js"></script>
+		<script type="text/javascript" src="../js/menu.js"></script>
+	</body>
+</html>

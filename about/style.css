@@ -1,0 +1,7 @@
+/*--------------------------------------------=Reference Stylesheet--------------------------------------------*/
+@import url('../css/style.css');
+/*--------------------------------------------=About Us start--------------------------------------------*/
+.about-us-section {
+	background-color: var(--theme-colour-a);
+	color: var(--font-colour-alt);
+}
